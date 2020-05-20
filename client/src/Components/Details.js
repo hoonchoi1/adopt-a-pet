@@ -34,6 +34,17 @@ export class Details extends Component{
     }
 
     render(){
+        const {
+            pet: {
+                type = '',
+                description = '',
+                likes = '',
+                skills1 = '',
+                skills2 = '',
+                skills3 = '',
+            } = {}
+        } = this.state;
+        
         return(
             <div className="details">
             
